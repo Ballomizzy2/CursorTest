@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Michael Olaoye — Computer Science Portfolio</title>
+    <meta name="description" content="Portfolio website highlighting the computer science and game development projects of Michael Olaoye." />
+    <meta name="color-scheme" content="light dark" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true">MO</span>
+          <span class="brand-text">Michael Olaoye</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Building interactive experiences and robust systems</h1>
+            <p>
+              I'm <strong>Michael Olaoye</strong>, a computer science developer with a focus on
+              game development, algorithms, and delightful UIs. Explore projects, read about my
+              skills, and reach out using the links below.
+            </p>
+            <div class="hero-cta">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button" target="_blank" rel="noopener" href="https://www.linkedin.com/in/michael-olaoye-451926220/">LinkedIn</a>
+              <a class="button" target="_blank" rel="noopener" href="https://micaelolaoye.wixsite.com/gameportfolio">Game Portfolio</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="grid-card">
+              <div class="stat">
+                <span class="stat-value" data-count-to="20">0</span>
+                <span class="stat-label">+ Projects</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value" data-count-to="4">0</span>
+                <span class="stat-label"> Disciplines</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value" data-count-to="3">0</span>
+                <span class="stat-label"> Years</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>About</h2>
+            <p>
+              I enjoy turning ideas into polished software. My interest areas include real‑time
+              graphics, gameplay programming, data structures, and full‑stack web apps. I value
+              readable code, performance, and great UX.
+            </p>
+            <p>
+              Outside of coding, I prototype game mechanics, study systems design, and share
+              learnings with other developers.
+            </p>
+            <div class="about-links">
+              <a class="button" target="_blank" rel="noopener" href="https://www.linkedin.com/in/michael-olaoye-451926220/">Connect on LinkedIn</a>
+              <a class="button" target="_blank" rel="noopener" href="https://micaelolaoye.wixsite.com/gameportfolio">See Game Work</a>
+            </div>
+          </div>
+          <div class="about-aside">
+            <div class="card">
+              <h3>Highlights</h3>
+              <ul class="checklist">
+                <li>Gameplay & Systems programming</li>
+                <li>Algorithms, data structures, and optimization</li>
+                <li>UI/UX focused front‑end development</li>
+                <li>Rapid prototyping and iteration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <div class="filters">
+              <input id="project-search" class="input" type="search" placeholder="Search projects…" />
+              <div id="tag-filters" class="tag-filters" aria-label="Filter by tag"></div>
+            </div>
+          </div>
+
+          <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skills-grid">
+            <li class="skill">C# / Unity</li>
+            <li class="skill">C++</li>
+            <li class="skill">Python</li>
+            <li class="skill">JavaScript / TypeScript</li>
+            <li class="skill">HTML / CSS</li>
+            <li class="skill">Node.js</li>
+            <li class="skill">React</li>
+            <li class="skill">Git / GitHub</li>
+            <li class="skill">REST APIs</li>
+            <li class="skill">Algorithms & DS</li>
+            <li class="skill">Shaders / Graphics</li>
+            <li class="skill">Linux</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>Contact</h2>
+            <p>
+              Want to collaborate or discuss an opportunity? The fastest way to reach me is via
+              LinkedIn. You can also explore more game work on my portfolio site.
+            </p>
+            <div class="contact-actions">
+              <a class="button primary" target="_blank" rel="noopener" href="https://www.linkedin.com/in/michael-olaoye-451926220/">Message on LinkedIn</a>
+              <a class="button" target="_blank" rel="noopener" href="https://micaelolaoye.wixsite.com/gameportfolio">Open Game Portfolio</a>
+            </div>
+          </div>
+          <div class="contact-card card">
+            <h3>Links</h3>
+            <ul class="link-list">
+              <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/michael-olaoye-451926220/">LinkedIn</a></li>
+              <li><a target="_blank" rel="noopener" href="https://micaelolaoye.wixsite.com/gameportfolio">Wix Game Portfolio</a></li>
+            </ul>
+            <p class="muted">Add an email address later by editing this card.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Michael Olaoye. All rights reserved.</p>
+        <a class="to-top" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Michael Olaoye",
+        "url": "",
+        "sameAs": [
+          "https://www.linkedin.com/in/michael-olaoye-451926220/",
+          "https://micaelolaoye.wixsite.com/gameportfolio"
+        ],
+        "jobTitle": "Computer Science Developer",
+        "knowsAbout": ["Game Development", "Algorithms", "Front-end", "Systems Programming"]
+      }
+    </script>
+  </body>
+</html>
